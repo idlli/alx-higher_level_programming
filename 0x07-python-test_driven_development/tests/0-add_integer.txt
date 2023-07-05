@@ -1,0 +1,21 @@
+>>> add = __import__('0-add_integer').add_integer
+
+>>> add(9, 7)
+16
+
+>>> add(2)
+100
+
+>>> add(9.0, 7.0)
+16
+
+>>> add(2.0)
+100
+
+>>> add(2.3, 4.2)
+6
+
+>>> add('56')
+Traceback (most recent call last):
+  File "<stdin>", line 6, in <module>
+TypeError: a must be an integer
