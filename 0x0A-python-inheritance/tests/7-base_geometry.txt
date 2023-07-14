@@ -1,0 +1,24 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bg = BaseGeometry()
+
+>>> bg.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+
+>>> bg.integer_validator('seven', 7)
+
+>>> bg.integer_validator('notint', 'hello')
+Traceback (most recent call last):
+...
+TypeError: notint must be an integer
+
+>>> bg.integer_validator('nseven', -7)
+Traceback (most recent call last):
+...
+ValueError: nseven must be greater than 0
+
+>>> bg.integer_validator('zero', 0)
+Traceback (most recent call last):
+...
+ValueError: zero must be greater than 0
